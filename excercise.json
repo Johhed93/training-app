@@ -1,0 +1,423 @@
+[
+    {
+      "övning": "Bänkpress",
+      "beskrivning": "Ligg på en bänk och pressa en skivstång från bröstet uppåt tills armarna är raka.",
+      "kroppsdel": "Bröst",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Hantelpress",
+      "beskrivning": "Ligg på en bänk och pressa hantlar från bröstet uppåt.",
+      "kroppsdel": "Bröst",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Kabelcross",
+      "beskrivning": "Använd kablar för att föra armarna ihop framför kroppen och jobba med bröstet.",
+      "kroppsdel": "Bröst",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Lutande bänkpress",
+      "beskrivning": "Utför bänkpress på en lutande bänk för att aktivera övre bröstmusklerna.",
+      "kroppsdel": "Bröst",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Dips",
+      "beskrivning": "Använd dina armar för att sänka och höja kroppen mellan två parallella stänger.",
+      "kroppsdel": "Bröst",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Push-ups",
+      "beskrivning": "Utför armhävningar med kroppsvikt för att träna bröst och triceps.",
+      "kroppsdel": "Bröst",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Hantelflyes",
+      "beskrivning": "Ligg på en bänk och öppna upp armarna som i en kram med hantlar.",
+      "kroppsdel": "Bröst",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Smith-maskin press",
+      "beskrivning": "Använd en Smith-maskin för att utföra pressövning med fast rörelsebana.",
+      "kroppsdel": "Bröst",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Pec deck maskin",
+      "beskrivning": "Sitt i en maskin och pressa ihop armstöden framför kroppen.",
+      "kroppsdel": "Bröst",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Landmine press",
+      "beskrivning": "Pressa en fastmonterad skivstång uppåt med en hand.",
+      "kroppsdel": "Bröst",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Marklyft",
+      "beskrivning": "Lyft en skivstång från marken genom att sträcka ut höft och knän.",
+      "kroppsdel": "Rygg",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Latsdrag",
+      "beskrivning": "Dra en stång nedåt mot bröstet medan du sitter och håller i en kabel.",
+      "kroppsdel": "Rygg",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Pull-ups",
+      "beskrivning": "Dra upp din kroppsvikt tills hakan är ovanför en stång.",
+      "kroppsdel": "Rygg",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Hantelrodd",
+      "beskrivning": "Böj framåt med en hantel i en hand och dra den uppåt mot höften.",
+      "kroppsdel": "Rygg",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "T-bar row",
+      "beskrivning": "Rodd med fastmonterad stång där du står lutad och drar stången mot bröstet.",
+      "kroppsdel": "Rygg",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Sittande kabelrodd",
+      "beskrivning": "Dra en kabel mot magen medan du sitter med raka ben.",
+      "kroppsdel": "Rygg",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Omvända flyes",
+      "beskrivning": "Utför flyes med hantlar framåtlutad för att träna övre ryggen.",
+      "kroppsdel": "Rygg",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Chins",
+      "beskrivning": "Liknar pull-ups men med ett supinerat grepp för att träna ryggen och biceps.",
+      "kroppsdel": "Rygg",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Superman",
+      "beskrivning": "Ligg på mage och lyft armar och ben samtidigt för att stärka nedre ryggen.",
+      "kroppsdel": "Rygg",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Good mornings",
+      "beskrivning": "Böj framåt med en skivstång på ryggen för att träna ländryggen.",
+      "kroppsdel": "Rygg",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Knäböj",
+      "beskrivning": "Böj på knäna med en skivstång på axlarna och återgå till stående position.",
+      "kroppsdel": "Ben",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Utfall med hantlar",
+      "beskrivning": "Gå framåt i utfall medan du håller hantlar vid sidorna.",
+      "kroppsdel": "Ben",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Benspark",
+      "beskrivning": "Använd en bensparksmaskin för att sträcka benen från en sittande position.",
+      "kroppsdel": "Ben",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Liggande bencurl",
+      "beskrivning": "Använd en bencurlmaskin för att böja knäna medan du ligger på magen.",
+      "kroppsdel": "Ben",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Höftlyft",
+      "beskrivning": "Ligg på rygg och lyft höfterna uppåt för att träna rumpa och baksida lår.",
+      "kroppsdel": "Ben",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Frontböj",
+      "beskrivning": "Utför knäböj med skivstången framför axlarna istället för bakom.",
+      "kroppsdel": "Ben",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Benpress",
+      "beskrivning": "Pressa en vikt med benen från en sittande position i en benpressmaskin.",
+      "kroppsdel": "Ben",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Sumo-marklyft",
+      "beskrivning": "Lyft en skivstång från marken med bred benställning.",
+      "kroppsdel": "Ben",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Step-ups",
+      "beskrivning": "Stig upp och ner från en låda medan du håller hantlar för att träna benen.",
+      "kroppsdel": "Ben",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Hack squat",
+      "beskrivning": "Utför knäböj i en maskin där du står lutad och pressar uppåt med benen.",
+      "kroppsdel": "Ben",
+      "nivå": "Avancerad"
+    },
+  
+    {
+      "övning": "Bicepscurl med hantlar",
+      "beskrivning": "Stå upp och håll en hantel i varje hand, curl upp vikterna genom att böja armbågarna.",
+      "kroppsdel": "Biceps",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Bicepscurl med skivstång",
+      "beskrivning": "Stå upp och håll en skivstång, curl upp vikten genom att böja armbågarna.",
+      "kroppsdel": "Biceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Hammer curls",
+      "beskrivning": "Håll hantlar med handflatorna vända mot varandra och curl vikterna upp mot axlarna.",
+      "kroppsdel": "Biceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Koncentrationscurl",
+      "beskrivning": "Sitt ner och stötta armbågen på insidan av ditt lår medan du curlar hanteln.",
+      "kroppsdel": "Biceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Preacher curl",
+      "beskrivning": "Utför curls på en preacher-bänk med skivstång eller hantlar.",
+      "kroppsdel": "Biceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Zottman curl",
+      "beskrivning": "Utför en bicepscurl med hantlar och rotera handflatorna nedåt när du sänker vikten.",
+      "kroppsdel": "Biceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Kabelcurl",
+      "beskrivning": "Använd en kabelmaskin för att utföra curls med konstant motstånd.",
+      "kroppsdel": "Biceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "21's",
+      "beskrivning": "Utför 7 halva reps från botten, 7 halva från toppen och 7 hela curls med skivstång.",
+      "kroppsdel": "Biceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Drag curl",
+      "beskrivning": "Curl vikten upp genom att dra armbågarna bakåt och hålla stången nära kroppen.",
+      "kroppsdel": "Biceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Reverse curl",
+      "beskrivning": "Curl upp skivstången med ett överhandsgrepp för att aktivera underarmarna och biceps.",
+      "kroppsdel": "Biceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Triceps pushdown",
+      "beskrivning": "Använd en kabelmaskin och tryck ner handtaget tills armarna är raka.",
+      "kroppsdel": "Triceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Dips på bänk",
+      "beskrivning": "Placera händerna på en bänk bakom dig och sänk kroppen nedåt, pressa sedan upp igen.",
+      "kroppsdel": "Triceps",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Skull crushers",
+      "beskrivning": "Ligg på en bänk och sänk en EZ-stång mot pannan, sträck sedan armarna upp igen.",
+      "kroppsdel": "Triceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Triceps kickbacks",
+      "beskrivning": "Stå framåtlutad med hantel i ena handen och sträck ut armen bakom dig för att träna triceps.",
+      "kroppsdel": "Triceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Overhead triceps extension med hantel",
+      "beskrivning": "Håll en hantel bakom huvudet med båda händerna och sträck uppåt.",
+      "kroppsdel": "Triceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Close-grip bänkpress",
+      "beskrivning": "Utför bänkpress med händerna nära varandra för att aktivera triceps mer.",
+      "kroppsdel": "Triceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Diamond push-ups",
+      "beskrivning": "Utför armhävningar med händerna ihop i en diamantform för att fokusera på triceps.",
+      "kroppsdel": "Triceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Tricepspress i maskin",
+      "beskrivning": "Sitt i en tricepspress-maskin och pressa handtagen neråt.",
+      "kroppsdel": "Triceps",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Overhead kabel triceps extension",
+      "beskrivning": "Använd en kabelmaskin och pressa handtaget uppåt ovanför huvudet.",
+      "kroppsdel": "Triceps",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Ring dips",
+      "beskrivning": "Utför dips på gymnastikringar för extra instabilitet och tricepsaktivering.",
+      "kroppsdel": "Triceps",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Sit-ups",
+      "beskrivning": "Ligg på rygg med böjda knän och lyft överkroppen mot knäna.",
+      "kroppsdel": "Mage",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Plankan",
+      "beskrivning": "Håll kroppen i en rak position på underarmarna och tårna, och aktivera core.",
+      "kroppsdel": "Mage",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Bicycle crunches",
+      "beskrivning": "Ligg på rygg och växla mellan att föra motsatt armbåge till motsatt knä.",
+      "kroppsdel": "Mage",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Hängande benlyft",
+      "beskrivning": "Häng från en stång och lyft benen upp mot bröstet för att aktivera magmusklerna.",
+      "kroppsdel": "Mage",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Russian twists",
+      "beskrivning": "Sitt med fötterna lätt lyfta från marken och vrid överkroppen från sida till sida med en vikt.",
+      "kroppsdel": "Mage",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Leg raises",
+      "beskrivning": "Ligg på rygg och lyft raka ben upp mot taket, sänk sedan långsamt ned igen.",
+      "kroppsdel": "Mage",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Toe touches",
+      "beskrivning": "Ligg på rygg med benen uppåt och försök nå tårna med händerna.",
+      "kroppsdel": "Mage",
+      "nivå": "Nybörjare"
+    },
+    {
+      "övning": "Mountain climbers",
+      "beskrivning": "Utför snabb växling mellan att dra in knäna mot bröstet från en plankposition.",
+      "kroppsdel": "Mage",
+      "nivå": "Medel"
+    },
+    {
+      "övning": "Cable crunches",
+      "beskrivning": "Använd en kabelmaskin för att dra ned överkroppen mot golvet från knästående position.",
+      "kroppsdel": "Mage",
+      "nivå": "Avancerad"
+    },
+    {
+      "övning": "Dead bug",
+      "beskrivning": "Ligg på rygg och växla mellan att sträcka motsatt arm och ben samtidigt.",
+      "kroppsdel": "Mage",
+      "nivå": "Nybörjare"
+    },  {
+        "övning": "Axelpress med hantlar",
+        "beskrivning": "Sitt eller stå och pressa hantlarna rakt upp över huvudet.",
+        "kroppsdel": "Axlar",
+        "nivå": "Nybörjare"
+      },
+      {
+        "övning": "Militärpress",
+        "beskrivning": "Stå med skivstången framför dig och pressa den rakt upp ovanför huvudet.",
+        "kroppsdel": "Axlar",
+        "nivå": "Medel"
+      },
+      {
+        "övning": "Sidolyft med hantlar",
+        "beskrivning": "Stå med hantlar i varje hand och lyft armarna ut åt sidorna tills de är parallella med marken.",
+        "kroppsdel": "Axlar",
+        "nivå": "Nybörjare"
+      },
+      {
+        "övning": "Face pulls",
+        "beskrivning": "Använd en kabelmaskin och dra repet mot ansiktet för att träna bakre axlar.",
+        "kroppsdel": "Axlar",
+        "nivå": "Medel"
+      },
+      {
+        "övning": "Arnold press",
+        "beskrivning": "Utför axelpress med hantlar men vrid handflatorna under rörelsen för att aktivera hela axelområdet.",
+        "kroppsdel": "Axlar",
+        "nivå": "Avancerad"
+      },
+      {
+        "övning": "Framåtlutade sidolyft",
+        "beskrivning": "Luta dig framåt och lyft hantlarna ut åt sidorna för att träna bakre axlar.",
+        "kroppsdel": "Axlar",
+        "nivå": "Medel"
+      },
+      {
+        "övning": "Hantellyft framåt",
+        "beskrivning": "Lyft hantlar rakt fram med rak arm för att träna framsida axlar.",
+        "kroppsdel": "Axlar",
+        "nivå": "Nybörjare"
+      },
+      {
+        "övning": "Kabellyft åt sidan",
+        "beskrivning": "Använd en kabelmaskin för att utföra sidolyft med konstant motstånd.",
+        "kroppsdel": "Axlar",
+        "nivå": "Avancerad"
+      },
+      {
+        "övning": "Handstående axelpress",
+        "beskrivning": "Utför en axelpress medan du står på händerna för att maximera belastningen på axlarna.",
+        "kroppsdel": "Axlar",
+        "nivå": "Avancerad"
+      },
+      {
+        "övning": "Omvänd pec deck",
+        "beskrivning": "Använd pec deck-maskinen för att träna bakre axlar genom att dra armarna bakåt.",
+        "kroppsdel": "Axlar",
+        "nivå": "Medel"
+      }
+      ]
+  

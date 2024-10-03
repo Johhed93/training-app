@@ -1,0 +1,10 @@
+.card-description{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    columns: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+}

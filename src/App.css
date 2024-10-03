@@ -1,0 +1,73 @@
+.root-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  display: flex;
+  min-height: 100dvh;
+}
+.central-content {
+  display: flex;
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  align-items: center;
+  border-radius: 50px;
+  flex-direction: column;
+  gap: 10px;
+  height: 90dvh;
+}
+.h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(175, 98, 230);
+  margin-top: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  background: black;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+.theme-headline {
+  font-size: 1.3rem;
+}
+.theme-button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  width: 120px;
+  border-radius: 20px;
+  outline: none;
+  background: black;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.theme-button::before {
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: purple;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  transition: 1s ease-in-out;
+}
+.theme-button:hover::before {
+  left: 150px;
+}
+.excercises-container{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-y: scroll; /* Behåll möjligheten att scrolla */
+  scrollbar-width: none; /* För Firefox */
+  -ms-overflow-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
