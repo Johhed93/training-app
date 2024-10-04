@@ -3,4 +3,6 @@ export interface Excercise {
     beskrivning:string;
     kroppsdel: string;
     nivå: String;
+    reps?:number;
+    sets?:number;
 }
