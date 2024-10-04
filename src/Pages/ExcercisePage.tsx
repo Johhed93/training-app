@@ -1,6 +1,6 @@
-const Excercise=()=>{
+const MyWorkoutPage=()=>{
 return(
 <><p>Excercise</p></>
 )
 }
-export default Excercise
+export default MyWorkoutPage

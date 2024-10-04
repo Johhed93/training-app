@@ -7,9 +7,11 @@ import MyPage from './Pages/MyPage'
 import { useEffect, useState } from 'react'
 import Excercises from './Pages/ExcercisePage'
 import ExcerciseContext from './context/ExcerciseContext'
-
+import MyWorkoutContext from './context/myWorkoutcontext'
+import { WorkoutType } from './types/WorkoutType'
+import { ToastContainer } from 'react-toastify'
 const App=()=> {
-  
+  const [myWorkouts, setMyWorkouts]= useState<WorkoutType[]>([])
   const [excercises,setExcercises]=useState<Excercise[]>([]);
   useEffect(()=>{
   fetch("../excercise.json")
@@ -22,10 +24,17 @@ const App=()=> {
      <BrowserRouter>
      <Navbar/>
      <Routes>
-      <Route path='/' element={<Home/>}>
+      
+      <Route path='/' element={
+        <MyWorkoutContext.Provider value={{myWorkouts, setMyWorkouts}}>
+        <Home/>
+        </MyWorkoutContext.Provider>
+    }/>
+      <Route path='/myPage' element={<MyWorkoutContext.Provider value={{myWorkouts, setMyWorkouts}}>
+        <MyPage/>
+        </MyWorkoutContext.Provider>}/>
+     
       <Route path='/excercises' element={<Excercises/>}/>
-      <Route path='/myPage' element={<MyPage/>}/>
-      </Route>
      </Routes>
      </BrowserRouter>
      </ExcerciseContext.Provider>
