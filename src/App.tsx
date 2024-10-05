@@ -9,7 +9,6 @@ import Excercises from './Pages/ExcercisePage'
 import ExcerciseContext from './context/ExcerciseContext'
 import MyWorkoutContext from './context/myWorkoutcontext'
 import { WorkoutType } from './types/WorkoutType'
-import { ToastContainer } from 'react-toastify'
 const App=()=> {
   const [myWorkouts, setMyWorkouts]= useState<WorkoutType[]>([])
   const [excercises,setExcercises]=useState<Excercise[]>([]);
