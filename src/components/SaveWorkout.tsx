@@ -1,14 +1,16 @@
 import { SetStateAction, useContext, useEffect, useRef, useState } from "react";
 import { Excercise } from "../types/Excercise";
-import { toast, ToastContainer } from "react-toastify";
+import { toast} from "react-toastify";
 import "./components.css";
 import "../App.css";
 import MyWorkoutContext from "../context/myWorkoutcontext";
 import { WorkoutType } from "../types/WorkoutType";
+import SelectedCard from "./SelectedCard";
 interface SaveWorkoutProps {
   selectedWorkout: Excercise[];
   modalIsOpen: boolean;
   setModalIsOpen: React.Dispatch<SetStateAction<boolean>>;
+  setSelectedWorkout: React.Dispatch<SetStateAction<Excercise[]>>
 }
 interface UserOptions {
   level: string;
@@ -21,6 +23,7 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
   selectedWorkout,
   modalIsOpen,
   setModalIsOpen,
+  setSelectedWorkout
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [level, Setlevel] = useState<UserOptions>();
@@ -84,36 +87,23 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
   
   myWorkoutContext.setMyWorkouts((prevState:WorkoutType[])=> [...prevState, listWithId ])
   setId((prevState)=>prevState+1)
-  console.log(myWorkoutContext.myWorkouts)
-  toast.success("Økten sparad")
+  setModalIsOpen(false);
+  toast.success("💪 Økten sparad")
+  setSelectedWorkout([])
   };
   return (
     <>
-     <ToastContainer position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-        />
+ 
       {modalIsOpen && (
        
         <dialog ref={dialogRef} className="dialog-element">
-          <h2 className="text-indigo-500 text-2xl">Hej</h2>
           <ul className="sidebar-list">
             {selectedWorkout.map((workout, index) => (
-              <li key={index} className="selected-desc-list">
-                <p className="text-xl">{workout.övning}</p>
-                <p className="desc-text-modal">{workout.beskrivning}</p>{" "}
-              </li>
+              <SelectedCard key={index} workout={workout} setSelectedWorkout={setSelectedWorkout} selectedWorkout={selectedWorkout}/>
             ))}
           </ul>
           <h3 className="text-indigo-500 text-lg ">Vad vill du uppnå</h3>
-          <div className="flex gap-2 grow w-full">
+          <div className="flex gap-2 grow w-full p-2.5">
             {userOption.map((user, index) => (
               <button
                 className={`level-btn ${
@@ -129,7 +119,7 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
           {error && (
             <p className="text-red-400">Du måste velja vad du vill uppnå</p>
           )}
-          <div className="flex gap-6 grow w-full mt-5">
+          <div className="flex gap-6 grow w-full mt-5 p-2.5">
             <button className="close-btn" onClick={() => setModalIsOpen(false)}>
               Steng
             </button>
