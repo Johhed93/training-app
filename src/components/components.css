@@ -1,24 +1,39 @@
 .card-description{
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
-    columns: white;
+    background: rgb(15, 15, 15);
+    color: white;
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
-    height: 300px;
+    width: 220px;
+    height: 330px;
     justify-content: space-between;
 }
 .add-to-myworkout{
     padding: 10px 0;
-    background: white;
+    
     color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(215, 124, 238);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+.add-to-myworkout:hover{
+    background-color: rgb(140, 58, 160);
+}
+.remove-from-workout{
+    background-color: rgb(241, 109, 164);
 }
 .selected-workout-list{
     background: rgb(28, 28, 28);
     padding: 10px 5px;
-    text-align: center;
-    
+    text-align: center; 
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.selected-workout-list:hover{
+    background-color: rgb(241, 109, 164);
 }
 .dialog-element{
     left:50%;
@@ -43,9 +58,7 @@
     align-items: center;
     padding: 10px;
 }
-.desc-text-modal{
-    font-style: italic;
-}
+
 .level-btn{
     padding: 10px 20px;
     background: rgb(20, 20, 20);
@@ -54,10 +67,13 @@
     transition: 0.4s ease-in-out;
 }
 .close-btn{
-    background-color: rgb(8, 8, 8);
-    color: red;
+    background-color: rgb(2, 2, 2);
+    color: rgb(245, 140, 140);
     padding: 10px 20px;
-    flex-grow: 1;
+    transition: 0.4s ease-in-out;
+}
+.close-btn:hover{
+    background-color: rgb(9, 9, 9);
 }
 .selected{
     background: rgb(37, 37, 37);
