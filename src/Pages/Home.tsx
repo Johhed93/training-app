@@ -3,20 +3,20 @@ import "../App.css";
 import ExcerciseContext from "../context/ExcerciseContext";
 import { Excercise } from "../types/Excercise";
 import Descriptioncard from "../components/DescriptionCard";
-import MyWorkoutContext from "../context/myWorkoutcontext";
 import SelectedCard from "../components/SelectedCard";
 import SaveWorkout from "../components/SaveWorkout";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 interface MuscleTheme {
   kroppsdel: string;
 }
 const Home = () => {
-  const myWorkoutContext = useContext(MyWorkoutContext);
   const excercersiseContext = useContext(ExcerciseContext);
   const [selectedWorkout, setSelectedWorkout] = useState<Excercise[]>([]);
   const [selectedTheme, setSelectedTheme] = useState<string>("");
   const [muscleGroups, setMusclegroups] = useState<Excercise[]>([]);
   const [themes, setThemes] = useState<MuscleTheme[]>([]);
-  const [modalIsOpen,setModalIsOpen]=useState<boolean>(false)
+  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setMusclegroups(excercersiseContext.excercises);
@@ -34,13 +34,19 @@ const Home = () => {
       (muscle) => muscle.kroppsdel === musclegroup
     );
     setMusclegroups(updatedlist);
-    setSelectedTheme(musclegroup)
+    setSelectedTheme(musclegroup);
   };
   return (
     <div className="root-wrapper">
-    <SaveWorkout selectedWorkout={selectedWorkout} setModalIsOpen={setModalIsOpen} modalIsOpen={modalIsOpen}/>
+      <ToastContainer theme="dark" position="top-center" autoClose={5000} />
+      <SaveWorkout
+        selectedWorkout={selectedWorkout}
+        setModalIsOpen={setModalIsOpen}
+        modalIsOpen={modalIsOpen}
+        setSelectedWorkout={setSelectedWorkout}
+      />
       <div className="sidebar">
-        <h2 className="theme-headline">Themes</h2>
+        <h2 className="theme-headline">Vad vill du träna?</h2>
         {themes.map((theme, index) => (
           <button
             className="theme-button"
@@ -52,38 +58,40 @@ const Home = () => {
         ))}
       </div>
       <div className="central-content">
-        <h1 className="text-indigo-500 text-2xl mt-2">
-          Välkommen till min träningssida
+        <h1 className="text-indigo-500 text-3xl mt-2">
+          Lägg till övningar, skapa ditt träningspass
         </h1>
         <h2 className="text-indigo-500 text-lg">
-          {selectedTheme === ""
-            ? "Alla övningar"
-            : `Alla ${selectedTheme} övningar`}
+          {selectedTheme === "" ? "Alla övningar" : `Alla ${selectedTheme} övningar`}
         </h2>
         <div className="excercises-container">
           <Descriptioncard
             excercise={muscleGroups}
             setSelectedWorkout={setSelectedWorkout}
+            selectedWorkout={selectedWorkout}
           />
         </div>
       </div>
       <div className="sidebar">
+        <h2 className="theme-headline">Mitt träningspass</h2>
         <ul className="sidebar-list">
           {selectedWorkout.length === 0 ? (
             <li>Inga øvningar lagt till en</li>
           ) : (
             <>
-            {selectedWorkout.map((workout, index) => (
-              <SelectedCard
-                key={index}
-                workout={workout}
-                setSelectedWorkout={setSelectedWorkout}
-              />
-            ))}
-            <button className="save-btn" onClick={()=>setModalIsOpen(true)}>Spara</button>
+              {selectedWorkout.map((workout, index) => (
+                <SelectedCard
+                  key={index}
+                  workout={workout}
+                  setSelectedWorkout={setSelectedWorkout}
+                  selectedWorkout={selectedWorkout}
+                />
+              ))}
+              <button className="save-btn" onClick={() => setModalIsOpen(true)}>
+                Spara
+              </button>
             </>
           )}
-
         </ul>
       </div>
     </div>
