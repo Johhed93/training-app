@@ -5,7 +5,6 @@ import { Excercise } from "../types/Excercise";
 import Descriptioncard from "../components/DescriptionCard";
 import SelectedCard from "../components/SelectedCard";
 import SaveWorkout from "../components/SaveWorkout";
-import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 interface MuscleTheme {
   kroppsdel: string;
@@ -38,7 +37,7 @@ const Home = () => {
   };
   return (
     <div className="root-wrapper">
-      <ToastContainer theme="dark" position="top-center" autoClose={5000} />
+      
       <SaveWorkout
         selectedWorkout={selectedWorkout}
         setModalIsOpen={setModalIsOpen}
@@ -58,10 +57,10 @@ const Home = () => {
         ))}
       </div>
       <div className="central-content">
-        <h1 className="text-indigo-500 text-3xl mt-2">
+        <h1 className="text-indigo-300 text-3xl mt-2">
           Lägg till övningar, skapa ditt träningspass
         </h1>
-        <h2 className="text-indigo-500 text-lg">
+        <h2 className="text-indigo-300 text-lg">
           {selectedTheme === "" ? "Alla övningar" : `Alla ${selectedTheme} övningar`}
         </h2>
         <div className="excercises-container">
