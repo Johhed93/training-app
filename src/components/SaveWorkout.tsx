@@ -32,7 +32,7 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
   const myWorkoutContext=useContext(MyWorkoutContext)
   const userOption: UserOptions[] = [
     {
-      level: "Tung styrke",
+      level: "Tungt",
       reps: "1 - 4",
       sets: "3 - 4",
       vila: 2,
@@ -59,11 +59,12 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
     } else {
       dialogRef.current?.showModal();
     }
-    if (selectedWorkout.length < 0) {
-      setModalIsOpen(false);
-      
-    }
   }, [modalIsOpen]);
+  useEffect(()=>{
+  if(selectedWorkout.length===0){
+    setModalIsOpen(false)
+  }
+  },[selectedWorkout])
   const handleLevelClick = (levl: UserOptions) => {
     Setlevel(levl);
   };
