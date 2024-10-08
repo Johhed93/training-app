@@ -6,6 +6,7 @@ import "../App.css";
 import MyWorkoutContext from "../context/myWorkoutcontext";
 import { WorkoutType } from "../types/WorkoutType";
 import SelectedCard from "./SelectedCard";
+import IdContext from "../context/IdContext";
 interface SaveWorkoutProps {
   selectedWorkout: Excercise[];
   modalIsOpen: boolean;
@@ -23,12 +24,12 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
   selectedWorkout,
   modalIsOpen,
   setModalIsOpen,
-  setSelectedWorkout
+  setSelectedWorkout,
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [level, Setlevel] = useState<UserOptions>();
   const [error, setError] = useState<boolean>(false);
-  const [id, setId]= useState<number>(1)
+  const idContext=useContext(IdContext)
   const myWorkoutContext=useContext(MyWorkoutContext)
   const userOption: UserOptions[] = [
     {
@@ -82,12 +83,12 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
     }
   ))
   const listWithId:WorkoutType={
-    id:id,
+    id:idContext.id,
     excersise:updatedlist
   }
   
   myWorkoutContext.setMyWorkouts((prevState:WorkoutType[])=> [...prevState, listWithId ])
-  setId((prevState)=>prevState+1)
+  idContext.SetId((prevState)=> prevState+1)
   setModalIsOpen(false);
   toast.success("💪 Økten sparad")
   setSelectedWorkout([])
