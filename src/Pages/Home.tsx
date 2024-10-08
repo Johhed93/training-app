@@ -16,6 +16,7 @@ const Home = () => {
   const [muscleGroups, setMusclegroups] = useState<Excercise[]>([]);
   const [themes, setThemes] = useState<MuscleTheme[]>([]);
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+  
 
   useEffect(() => {
     setMusclegroups(excercersiseContext.excercises);
@@ -35,6 +36,7 @@ const Home = () => {
     setMusclegroups(updatedlist);
     setSelectedTheme(musclegroup);
   };
+  
   return (
     <div className="root-wrapper">
       
