@@ -81,3 +81,7 @@
 .selected{
     background: rgb(37, 37, 37);
 }
+.my-workout{
+    padding: 10px;
+    background-color: white;
+}
