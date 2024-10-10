@@ -1,87 +1,116 @@
-.card-description{
-    display: flex;
-    flex-direction: column;
-    background: rgb(15, 15, 15);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 220px;
-    height: 330px;
-    justify-content: space-between;
+.card-description {
+  display: flex;
+  flex-direction: column;
+  background: rgb(15, 15, 15);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  height: 330px;
+  justify-content: space-between;
 }
-.add-to-myworkout{
-    padding: 10px 0;
-    color: black;
-    border-radius: 10px;
-    margin-top: 10px;
-    background-color: rgb(215, 124, 238);
-    transition: 0.5s ease-in-out;
-    position: relative;
+.add-to-myworkout {
+  padding: 10px 0;
+  color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: rgb(215, 124, 238);
+  transition: 0.5s ease-in-out;
+  position: relative;
 }
-.add-to-myworkout:hover{
-    background-color: rgb(140, 58, 160);
+.add-to-myworkout:hover {
+  background-color: rgb(140, 58, 160);
 }
-.remove-from-workout{
-    background-color: rgb(241, 109, 164);
+.remove-from-workout {
+  background-color: rgb(241, 109, 164);
 }
-.selected-workout-list{
-    background: rgb(28, 28, 28);
-    padding: 10px 5px;
-    text-align: center; 
-    transition: 0.4s ease-in-out;
-    color: white;
-    cursor: pointer;
-    width: 100%;
+.selected-workout-list {
+  background: rgb(28, 28, 28);
+  padding: 10px 5px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  color: white;
+  cursor: pointer;
+  width: 100%;
 }
-.selected-workout-list:hover{
-    background-color: rgb(241, 109, 164);
+.active-workout {
+  padding: 20px 10px;
+  background-color: rgb(241, 109, 164);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.dialog-element{
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    padding: 40px;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    border: 1px solid white;
-    border-radius: 10px;
+.selected-workout-list:hover {
+  background-color: rgb(241, 109, 164);
 }
-.dialog-element::backdrop{
-    background: rgba(0, 0, 0, 0.8);
+.dialog-element {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
-.selected-desc-list{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    color: white;
-    background-color: rgb(20, 20, 20);
-    align-items: center;
-    padding: 10px;
+.dialog-element::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.selected-desc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  align-items: center;
+  padding: 10px;
 }
 
-.level-btn{
-    padding: 10px 20px;
-    background: rgb(20, 20, 20);
-    color: rgb(177, 105, 228);
-    width: 33%;
-    transition: 0.4s ease-in-out;
+.level-btn {
+  padding: 10px 20px;
+  background: rgb(20, 20, 20);
+  color: rgb(177, 105, 228);
+  width: 33%;
+  transition: 0.4s ease-in-out;
 }
-.close-btn{
-    background-color: rgb(2, 2, 2);
-    color: rgb(245, 140, 140);
-    padding: 10px 20px;
-    transition: 0.4s ease-in-out;
+.close-btn {
+  background-color: rgb(2, 2, 2);
+  color: rgb(245, 140, 140);
+  padding: 10px 20px;
+  transition: 0.4s ease-in-out;
 }
-.close-btn:hover{
-    background-color: rgb(9, 9, 9);
+.close-btn:hover {
+  background-color: rgb(9, 9, 9);
 }
-.selected{
-    background: rgb(37, 37, 37);
+.selected {
+  background: rgb(37, 37, 37);
 }
-.my-workout{
-    padding: 10px;
-    background-color: white;
+.my-workout {
+  padding: 20px;
+  background-color: white;
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 600px;
+}
+.workout-container{
+  display: grid;
+  place-items: center;
+  min-height: 90dvh;
+}
+.current-workout{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+  max-width: 600px;
 }
