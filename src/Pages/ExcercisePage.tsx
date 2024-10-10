@@ -8,7 +8,7 @@ const MyWorkoutPage = () => {
       <div className="sidebar"></div>
       <div className="central-content">
         <h1 className="text-indigo-300 text-3xl mt-2">Mina Treningspass</h1>
-        <div className="excercises-container">
+        <div className="myWorkouts-container">
         {<MyWorkoutList />}
         </div>
        
