@@ -16,7 +16,7 @@ interface SaveWorkoutProps {
 interface UserOptions {
   level: string;
   reps: string;
-  sets: string;
+  sets: number;
   vila: number;
   procent: string;
 }
@@ -35,21 +35,21 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
     {
       level: "Tungt",
       reps: "1 - 4",
-      sets: "3 - 4",
+      sets: 4,
       vila: 2,
       procent: "90 - 100",
     },
     {
       level: "Styrke",
       reps: "5 - 8",
-      sets: "3 - 4",
+      sets: 4,
       vila: 1.5,
       procent: "80 - 90",
     },
     {
       level: "Volym",
       reps: "8 - 12",
-      sets: "3 - 4",
+      sets: 4,
       vila: 1,
       procent: "70 - 80",
     },
@@ -79,14 +79,14 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
     }
   const updatedlist:Excercise[]=selectedWorkout.map((workout)=>(
     {...workout,
-    ...level
     }
   ))
   const listWithId:WorkoutType={
     id:idContext.id,
+    ...level,
     excersise:updatedlist
   }
-  
+  console.log(listWithId)
   myWorkoutContext.setMyWorkouts((prevState:WorkoutType[])=> [...prevState, listWithId ])
   idContext.SetId((prevState)=> prevState+1)
   setModalIsOpen(false);
