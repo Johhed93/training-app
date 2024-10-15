@@ -12,10 +12,12 @@ import { WorkoutType } from "./types/WorkoutType";
 import { ToastContainer } from "react-toastify";
 import IdContext from "./context/IdContext";
 import StartWorkout from "./Pages/StartWorkout";
+import StartedWorkoutContext from "./context/StartedWorkoutContext";
 const App = () => {
   const [myWorkouts, setMyWorkouts] = useState<WorkoutType[]>([]);
   const [excercises, setExcercises] = useState<Excercise[]>([]);
   const [id, SetId] = useState<number>(1);
+  const [startedWorkout, setStartedWorkout]= useState<WorkoutType[]>([])
   useEffect(() => {
     fetch("../excercise.json")
       .then((res) => res.json())
@@ -24,6 +26,7 @@ const App = () => {
   return (
     <>
       <ToastContainer theme="dark" position="top-center" autoClose={5000} />
+      <StartedWorkoutContext.Provider value={{startedWorkout,setStartedWorkout}}>
       <IdContext.Provider value={{ id, SetId }}>
         <ExcerciseContext.Provider value={{ excercises }}>
           <BrowserRouter>
@@ -58,6 +61,7 @@ const App = () => {
           </BrowserRouter>
         </ExcerciseContext.Provider>
       </IdContext.Provider>
+      </StartedWorkoutContext.Provider>
     </>
   );
 };
