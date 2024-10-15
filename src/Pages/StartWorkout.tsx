@@ -7,6 +7,7 @@ import "../App.css";
 import top2 from "../utils/countApperance";
 import { Excercise } from "../types/Excercise";
 import countTime from "../utils/countTime";
+import StartedWorkoutContext from "../context/StartedWorkoutContext";
 type RouteParams = {
   id: string | undefined;
 };
@@ -16,9 +17,11 @@ const StartWorkout = () => {
   const [workoutTimer, SetWorkoutTimer] = useState<number>(0);
   const [currentWorkout, SetCurrentWorkout] = useState<Excercise[]>([]);
   const [countSet, SetCountSet] = useState<number>(0);
+  const [pauseWorkout, SetPauseWorkout]=useState<boolean>(false)
+
 
   const myWorkouts = useContext(MyWorkoutContext);
-
+  const savedWorkoutContext=useContext(StartedWorkoutContext)
   const { id } = useParams<RouteParams>();
   const navigate = useNavigate();
 
@@ -44,7 +47,12 @@ const StartWorkout = () => {
     if (!workoutIsOn) {
       return;
     }
+    if(pauseWorkout){
+      return;
+    }
     if (currentWorkout.length === 0) {
+      SetWorkout(prevState=>({...prevState, completed:true, date:new Date()}))
+      savedWorkoutContext.setStartedWorkout((prevState)=>[...prevState, workout])
       SetWorkoutIsOn(false);
     }
     if (workoutTimer === 0) {
@@ -65,12 +73,12 @@ const StartWorkout = () => {
   }, [workoutTimer]);
 
   return (
-    <div className="workout-container m-6">
-      <div className="flex flex-col gap-4 rounded-md bg-zinc-900 p-8 items-center">
+    <div className="workout-container bg-zinc-900">
+      <div className="flex flex-col gap-4 rounded-md bg-zinc-800 p-8 items-center">
         {workoutIsOn ? (
           <>
             <h2 className="text-indigo-500 text-2xl">{top2(workout.excersise)}</h2>
-            <div className="flex items-center justify-center rounded-full border-indigo-300 border-solid border-4 h-36 w-36">
+            <div className="flex items-center justify-center rounded-full border-indigo-300 border-solid border-4 h-36 w-36 bg-indigo-500 shadow-lg shadow-indigo-100/50">
               <p className="text-xl text-white">{workoutTimer}</p>
             </div>
             <p className="py-1  px-3 bg-neutral-700 text-indigo-300 rounded-md">
