@@ -6,7 +6,9 @@ export interface WorkoutType{
     sets:number;
     vila:number;
     procent:string;
-    level?:string;
+    level:string;
     id:number,
-    excersise:Excercise[]
+    excersise:Excercise[],
+    completed?:boolean,
+    date?:Date
 }

@@ -84,6 +84,7 @@ const SaveWorkout: React.FC<SaveWorkoutProps> = ({
   const listWithId:WorkoutType={
     id:idContext.id,
     ...level,
+    completed:false,
     excersise:updatedlist
   }
   console.log(listWithId)
